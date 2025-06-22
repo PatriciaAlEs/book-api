@@ -22,10 +22,10 @@ class Book(db.Model):
     language = db.Column(db.String(200), nullable=False)
     sinopsis = db.Column(db.Text, nullable=True)
     isbn = db.Column(db.String(50), unique=True, nullable=False)
-📦 Cómo ejecutar el proyecto
-bash
-Copiar
-Editar
+
+
+ 📦 Cómo ejecutar el proyecto
+
 # Clonar el repositorio
 git clone https://github.com/PatriciaAlEs/book-api.git
 
@@ -43,7 +43,10 @@ pip install -r requirements.txt
 
 # Ejecutar la app
 python app.py
-✨ Próximamente
+
+
+✨ Próximamente -----> ✨
+
 Endpoints REST completos
 
 Filtro por género, autor y año
