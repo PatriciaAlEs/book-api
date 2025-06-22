@@ -1,13 +1,19 @@
 # 📚 Book API
 
-Una API REST construida con Flask y SQLAlchemy para gestionar una colección de libros. Permite consultar, añadir, modificar y eliminar libros desde una base de datos SQLite.
+Una API construida con Flask, SQLAlchemy y GraphQL para gestionar una colección de libros. Permite consultar, añadir, modificar y eliminar libros desde una base de datos SQLite a través de un endpoint GraphQL.
+
+---
 
 ## 🚀 Tecnologías usadas
 
-- Python 3
-- Flask
-- SQLAlchemy
+- Python 3.10
+- Flask 3.1.1
+- SQLAlchemy 2.0
+- Graphene 2.1.9
+- Flask-GraphQL 2.0.1
 - SQLite (por defecto, puedes migrar a PostgreSQL)
+
+---
 
 ## 🧩 Modelo de datos
 
@@ -22,6 +28,7 @@ class Book(db.Model):
     language = db.Column(db.String(200), nullable=False)
     sinopsis = db.Column(db.Text, nullable=True)
     isbn = db.Column(db.String(50), unique=True, nullable=False)
+
 
 
  📦 Cómo ejecutar el proyecto
@@ -43,6 +50,7 @@ pip install -r requirements.txt
 
 # Ejecutar la app
 python app.py
+
 
 
 ✨ Próximamente -----> ✨
